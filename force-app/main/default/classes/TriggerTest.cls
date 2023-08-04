@@ -231,6 +231,7 @@ public with sharing class TriggerTest {
     /*
     * Opportunity Trigger
     * When an opportunity is updated validate that the amount is greater than 5000.
+    * Error Message: 'Opportunity amount must be greater than 5000'
     * Trigger should only fire on update.
     */
     @IsTest
@@ -282,6 +283,7 @@ public with sharing class TriggerTest {
     /*
     * Opportunity Trigger
     * When an opportunity is deleted prevent the deletion of a closed won opportunity if the account industry is 'Banking'.
+    * Error Message: 'Cannot delete closed opportunity for a banking account that is won'
     * Trigger should only fire on delete.
     */
     @IsTest
@@ -309,7 +311,7 @@ public with sharing class TriggerTest {
             delete opportunitiesToInsert;
             System.assert(false, 'Expected an exception but did not get one.');
         } catch (DmlException e) {
-            System.assert(e.getMessage().contains('Cannot delete a closed won opportunity for a banking account'), 'The error message is not as expected.');
+            System.assert(e.getMessage().contains('Cannot delete closed opportunity'), 'The error message is not as expected.');
         }
         Test.stopTest();
     }
