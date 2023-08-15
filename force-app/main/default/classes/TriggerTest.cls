@@ -12,6 +12,8 @@
 * 1. Validate that the amount is greater than 5000.
 * 2. Prevent the deletion of a closed won opportunity for a banking account.
 * 3. Set the primary contact on the opportunity to the contact with the title of CEO.
+*
+* NOTE: Disable all duplicate rules in the org. This will help prevent errors in the test classes or triggers. https://help.salesforce.com/s/articleView?id=ind.Disable_Account_Duplicate_Rule_CAM_OS_Enabled.htm&type=5
 */
 @IsTest
 public with sharing class TriggerTest {
