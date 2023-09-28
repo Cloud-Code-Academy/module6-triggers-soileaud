@@ -24,7 +24,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on insert.
     */
     @IsTest 
-    static void testAccountTrgger_setTypeProspect() {
+    static void testAccountTrigger_setTypeProspect() {
         // Prepare the test data
         List<Account> accountTypeProspect = new List<Account>();
         List<Account> accountTypeNotChange = new List<Account>();
@@ -73,7 +73,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on insert.
     */
     @IsTest 
-    static void testAccountTrgger_addressCopy() {
+    static void testAccountTrigger_addressCopy() {
         // Prepare the test data
         List<Account> accountsToInsert = new List<Account>();
         for (Integer i = 0; i < 200; i++) {
@@ -132,7 +132,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on insert.
     */
     @IsTest 
-    static void testAccountTrgger_setRating() {
+    static void testAccountTrigger_setRating() {
         // Prepare the test data
         List<Account> accountsToInsert = new List<Account>();
         List<Account> accountsNotHot = new List<Account>();
@@ -192,7 +192,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on insert.
     */
     @IsTest
-    static void testAccountTrgger_defaultContact() {
+    static void testAccountTrigger_defaultContact() {
         // Prepare the test data
         List<Account> accountsToInsert = new List<Account>();
         for (Integer i = 0; i < 400; i++) {
