@@ -275,7 +275,7 @@ public with sharing class TriggerTest {
             update opportunitiesToInsert;
             System.assert(false, 'Expected an exception but did not get one.');
         } catch (DmlException e) {
-            System.assert(e.getMessage().contains('Opportunity amount must be greater than 5000'), 'The error message is not as expected.');
+            System.assert(e.getMessage().contains('Opportunity amount must be greater than 5000'), 'The error message is not as expected. Message: ' + e.getMessage());
         }
 
         // Assert that the opportunities that should not trigger the validation rule have been updated
