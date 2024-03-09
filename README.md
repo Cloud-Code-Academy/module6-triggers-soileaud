@@ -15,9 +15,7 @@ During this module's practice repository, you will gain essential knowledge abou
 Mastering Apex Triggers will equip you with the ability to automate complex business processes and validations, enhancing the power and flexibility of your Salesforce applications. This week lays the foundation for more advanced topics such as Trigger frameworks and asynchronous Apex, setting you on the path to becoming an expert Salesforce developer.
 
 ## Setup
-[Beginner Setup Overview Video](https://vimeo.com/839597882/46fc06d93e)
-
-[Intermediate Setup Overview Video](https://vimeo.com/847130413/955b8bdbe2)
+[Setup Overview](https://learn.cloudcodeacademy.com/courses/salesforce-developer-kickstart-program/lectures/47317633)
 
 ## Getting Started Checklist
 1. Create/Configure a trailhead playground or developer org to do your work throughout this program.
